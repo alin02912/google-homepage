@@ -1,10 +1,13 @@
+a {
+    text-decoration: none;
+}
+
 header{
     background-color: rgb(255, 255, 255);
     height: 5vh;
     display: grid;
-    margin-top: 15px;
     grid: [row1s] "HG1 . HG2" 100% [row1e]
-    / 100px 1fr 200px;
+    / 150px 1fr 200px;
 }
 .HG1 {
     grid-area: HG1;
@@ -12,10 +15,10 @@ header{
 }
 
 .HG1 a {
-    text-decoration: none;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
+    margin: 10px;
 }
 
 .HG2 {
@@ -24,10 +27,10 @@ header{
 }
 
 .HG2 a {
-    text-decoration: none;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
+    margin: 10px;
 }
 
 a:hover {
@@ -55,16 +58,18 @@ main {
     background-color: rgb(255, 255, 255);
     height: 85vh;
     display: grid;
-    grid: [row1s] ". . ." 0.5fr [row1e]
+    grid: [row1s] ". . ." 0.3fr [row1e]
     [row2s] ". main ." 1fr [row2e]
     [row3s] ". . ." 1fr [row3e]
-    / 1fr 1fr 1fr;
+    / 10vw 80vw 10vw;
     place-content: center;
     place-items: center;
 }
 
 .MC {
     grid-area: main;
+    width: 100%;
+    margin: 0 auto;
 }
 .MC img {
     max-width: 100%;
@@ -74,10 +79,12 @@ main {
 }
 
 .input-container {
-    border: 1px solid gray;
+    border: 1px solid rgb(184, 180, 180);
     border-radius: 24px;
     height: 44px;
-    width: 582px;
+    width: 90%;
+    max-width: 582px;
+    margin: 0 auto;
 }
 
 .input-container input {
@@ -87,12 +94,60 @@ main {
     border: none;
 }
 
+.MC .button-container {
+  
+    width: 85%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.button-container button {
+    background-color: rgb(248, 249, 250);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    min-width: 54px;
+    height: 36px;
+    border: none;
+    padding: 5px 15px;
+    margin-bottom: 15px;
+}
+
 .footer-one {
-    background-color: rgb(169, 169, 169);
+    background-color: rgb(242, 242, 242);
     height: 5vh;
 }
 
+.footer-one p {
+    position: relative;
+    color: rgb(102, 102, 102);
+    max-width: 50px;
+    left: 15px;
+    top: 10px;
+    font-size: min(1.5vh, 15px);
+    
+}
+
 footer {
-    background-color: green;
+    display: grid;
+    background-color: rgb(242, 242, 242);
 height: 5vh;
+grid: [row1s] "FG1 . FG2" 100% [row1e]
+/ auto 1fr auto;
+}
+
+footer .FG1 {
+    grid-area: FG1;
+    font-size: min(1.5vh, 15px);
+    place-self: center;
+}
+
+footer .FG2 {
+    grid-area: FG2;
+    place-self: center;
+    font-size: min(1.5vh, 15px);
+    
+}
+
+footer a:visited {
+    color: rgb(112, 117, 122);
 }
