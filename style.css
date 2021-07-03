@@ -148,6 +148,18 @@ footer .FG2 {
     
 }
 
+footer .FG1 a {
+    margin-left: 10px;
+    color: rgb(112, 117, 122);
+}
+
+footer .FG2 a {
+    margin-right: 10px;
+    color: rgb(112, 117, 122);
+}
+
 footer a:visited {
     color: rgb(112, 117, 122);
 }
+
+
