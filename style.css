@@ -1,0 +1,98 @@
+header{
+    background-color: rgb(255, 255, 255);
+    height: 5vh;
+    display: grid;
+    margin-top: 15px;
+    grid: [row1s] "HG1 . HG2" 100% [row1e]
+    / 100px 1fr 200px;
+}
+.HG1 {
+    grid-area: HG1;
+    place-self: center;
+}
+
+.HG1 a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.HG2 {
+    grid-area: HG2;
+    place-self: center;
+}
+
+.HG2 a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.image-div {
+    display: inline;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+.image-div img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.image-div:hover {
+    border-radius: 50%;
+    background-color: rgba(60,64,67,0.08);;
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+    height: 85vh;
+    display: grid;
+    grid: [row1s] ". . ." 0.5fr [row1e]
+    [row2s] ". main ." 1fr [row2e]
+    [row3s] ". . ." 1fr [row3e]
+    / 1fr 1fr 1fr;
+    place-content: center;
+    place-items: center;
+}
+
+.MC {
+    grid-area: main;
+}
+.MC img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 50px auto;
+}
+
+.input-container {
+    border: 1px solid gray;
+    border-radius: 24px;
+    height: 44px;
+    width: 582px;
+}
+
+.input-container input {
+    width: 85%;
+    display: block;
+    margin: 10px auto;
+    border: none;
+}
+
+.footer-one {
+    background-color: rgb(169, 169, 169);
+    height: 5vh;
+}
+
+footer {
+    background-color: green;
+height: 5vh;
+}
